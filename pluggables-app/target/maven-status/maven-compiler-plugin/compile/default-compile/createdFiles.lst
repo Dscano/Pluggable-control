@@ -1,0 +1,11 @@
+org/pluggables/app/api/PluggableData.class
+org/pluggables/app/rest/PluggablesWebApplication.class
+org/pluggables/app/PluggableManager$DevListener.class
+org/pluggables/app/rest/PluggablesWebResource.class
+org/pluggables/app/api/DevicePluggables.class
+org/pluggables/app/rest/PluggablesCodec.class
+org/pluggables/app/cli/AppCommand.class
+org/pluggables/app/ApiDocRegistrator.class
+org/pluggables/app/PluggableManager.class
+org/pluggables/app/api/DevicePluggablesData.class
+org/pluggables/app/rest/PluggableCodec.class

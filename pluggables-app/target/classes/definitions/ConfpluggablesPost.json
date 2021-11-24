@@ -1,0 +1,92 @@
+{
+  "type": "object",
+  "title": "confdevicepluggables",
+
+  "required": [
+    "pluggable-one",
+    "pluggable-two",
+    "srcConnectPoint",
+    "dstConnectPoint"
+  ],
+  "properties": {
+    "pluggable-one": {
+      "type": "object",
+      "title": "pluggable-one",
+      "required": [
+        "device-id",
+        "pluggable-id",
+        "opmode",
+        "frequency",
+        "power"
+      ],
+      "properties": {
+        "device-id": {
+          "type": "String",
+          "example": "device:10.30.2.44:50001"
+        },
+        "pluggable-id": {
+          "type": "String",
+          "example": "Cisco-400zr-QSFP-DD-01"
+        },
+        "opmode": {
+          "type": "String",
+          "example": "1"
+        },
+        "frequency": {
+          "type": "Double",
+          "example": 192300.0
+        },
+        "power": {
+          "type": "Float",
+          "example": 1.0
+        }
+      }
+    },
+    "pluggable-two": {
+      "type": "object",
+      "title": "pluggable-two",
+      "required": [
+        "device-id",
+        "pluggable-id",
+        "opmode",
+        "frequency",
+        "power"
+      ],
+      "properties": {
+        "device-id": {
+          "type": "String",
+          "example": "device:10.30.2.102:50001"
+        },
+        "pluggable-id": {
+          "type": "String",
+          "example": "Cisco-400zr-QSFP-DD-01"
+        },
+        "opmode": {
+          "type": "String",
+          "example": "1"
+        },
+        "frequency": {
+          "type": "Double",
+          "example": 192300.0
+        },
+        "power": {
+          "type": "Float",
+          "example": 1.0
+        }
+      }
+    },
+    "srcConnectPoint": {
+      "type": "String",
+      "example": "device:10.30.2.46:50001/1"
+    },
+    "dstConnectPoint": {
+      "type": "String",
+      "example": "device:10.30.2.102:50001/1"
+    },
+    "connection-name": {
+      "type": "String",
+      "example": "connection-1"
+    }
+  }
+  }
+

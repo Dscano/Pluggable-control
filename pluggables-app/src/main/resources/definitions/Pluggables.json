@@ -1,0 +1,58 @@
+{
+  "type": "object",
+  "title": "pluggables",
+
+  "required": [
+    "device-id",
+    "pluggables"
+  ],
+  "properties": {
+    "device-id": {
+      "type": "String",
+      "example": "device:10.30.2.102:50001"
+    },
+    "pluggables": {
+      "type": "array",
+      "xml": {
+        "name": "pluggables",
+        "wrapped": true
+      },
+      "items": {
+        "type": "object",
+        "title": "pluggables",
+        "required": [
+          "pluggable-id",
+          "port",
+          "isEnable",
+          "portType",
+          "portSpeed"
+        ],
+        "properties": {
+          "pluggable-id": {
+            "type": "string",
+            "example": "Cisco-ABDCE12345-02"
+          },
+          "port": {
+            "type": "integer",
+            "format": "int64",
+            "example": 4
+          },
+          "isEnable": {
+            "type": "Boolean",
+            "example": true
+          },
+          "portType": {
+            "type": "integer",
+            "format": "int64",
+            "example": 0
+          },
+          "portSpeed": {
+            "type": "Long",
+            "format": "int16",
+            "example": 0
+          }
+        }
+      }
+    }
+  }
+}
